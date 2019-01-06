@@ -1,62 +1,54 @@
-# MathClass-11.txt 
-# Last revised 2008-08-12
+# MathClass.txt. This corresponds to UTR #25 revision 12.
+# Last revised 2011-02-07
 #
-#--------------------------
-# This is a classification of characters based on their usage in 
-# mathematical notation and providing a mapping to standard entity 
-# sets commonly used for SGML and MathML documents.
+# ------------------------------------------------
+# This file is a classification of characters based on their usage in
+# mathematical notation.
 #
 # While the contents of this file represent the best information
 # available to the authors and the Unicode Technical Committee as
 # of the date referenced above, it is likely that the information
-# in this file will change from time to time. Most importantly,
-# the mapping of characters to the ISO standard SGML entity sets
-# is under review by the relevant ISO committee and may therefore
-# change.
+# in this file will change from time to time.
 #
-# This file is *NOT* formally part of the Unicode Character
-# Database at this time.
+# This file is *NOT* formally part of the Unicode Character Database
+# at this time.
 #
-# The file consists of 7 fields. The number and type of fields in
-# this file may change in future versions.
+# The character encoding of this plain-text file is UTF-8.
 #
-# The character encoding of the plain-text files is UTF-8
+# The file consists of 2 fields.
 #
 # 1: code point or range
-# The code point field is not unique - where ISO entity sets overlap;
-# the same code point may occur several times with different mappings
 #
-# 2: class
-# In this version of the file the class can be one of:
+# 2: class, one of:
 #
-#	N - Normal- includes all digits and symbols requiring only one form
-#	A - Alphabetic 
+#	N - Normal - includes all digits and symbols requiring only one form
+#	A - Alphabetic
 #	B - Binary
-#	C - Closing – usually paired with opening delimiter
+#	C - Closing - usually paired with opening delimiter
 #	D - Diacritic
 #	F - Fence - unpaired delimiter (often used as opening or closing)
-#	G - Glyph_Part- piece of large operator
-#	L - Large -n-ary or Large operator, often takes limits
-#	O - Opening – usually paired with closing delimiter
+#	G - Glyph_Part - piece of large operator
+#	L - Large - n-ary or large operator, often takes limits
+#	O - Opening - usually paired with closing delimiter
 #	P - Punctuation
-#	R - Relation- includes arrows
-#	S – Space
-#	U – Unary – operators that are only unary
-#	V – Vary – operators that can be unary or binary depending on context
-#	X – Special –characters not covered by other classes
+#	R - Relation - includes arrows
+#	S - Space
+#	U - Unary - operators that are only unary
+#	V - Vary - operators that can be unary or binary depending on context
+#	X - Special - characters not covered by other classes
 #
-# Fields are delimited by “;”. Spaces adjacent to the delimiter or the “#” are
+# Fields are delimited by ';'. Spaces adjacent to the delimiter or the '#' are
 # not significant. Future versions of this file may use different amounts of
 # whitespace.
 #
-# Some character positions in the Mathematical Alphanumeric Symbols range are
-# reserved and have been mapped to the Letterlike symbols range in Unicode.
+# Some character positions in the Mathematical Alphanumeric Symbols block are
+# reserved and have been mapped to the Letterlike Symbols block in Unicode.
 # This is indicated in 23 special purpose comments.
 #
-# For more information see revision 11 or later of UTR#25
-# --------------------------------------
+# Updated to reflect character repertoire of Unicode 6.0. For more information
+# see revision 12 or later of UTR #25.
+# ------------------------------------------------
 
-code point;class
 0020;S
 0021;N
 0021;N
@@ -217,6 +209,9 @@ code point;class
 03F5;A
 03F6;N
 0428;A
+0606;L
+0607;L
+0608;A
 2000;S
 2001;S
 2002;S
@@ -234,9 +229,7 @@ code point;class
 2014;P
 2016;F
 2020;R
-2020;N
 2021;R
-2021;N
 2022;B
 2026;N
 2032;N
@@ -267,7 +260,7 @@ code point;class
 20D2;D
 20D3;X
 20D4;D
-20D4;D
+20D5;D
 20D6;D
 20D7;D
 20D8;D
@@ -343,105 +336,10 @@ code point;class
 2148;N
 2149;N
 214B;N
-2190;R
-2191;R
-2192;R
-2193;R
-2194;R
-2195;R
-2196;R
-2197;R
-2198;R
-2199;R
-219A;R
-219B;R
-219C;R
-219D;R
-219E;R
-219F;R
-21A0;R
-21A1;R
-21A2;R
-21A3;R
-21A4;R
-21A5;R
-21A6;R
-21A7;R
-21A8;R
-21A9;R
-21AA;R
-21AB;R
-21AC;R
-21AD;R
-21AE;R
-21AF;R
-21B0;R
-21B1;R
-21B2;R
-21B3;R
+2190..21B3;R
 21B6;R
 21B7;R
-21BA;R
-21BB;R
-21BC;R
-21BD;R
-21BE;R
-21BF;R
-21C0;R
-21C1;R
-21C2;R
-21C3;R
-21C4;R
-21C5;R
-21C6;R
-21C7;R
-21C8;R
-21C9;R
-21CA;R
-21CB;R
-21CC;R
-21CD;R
-21CE;R
-21CF;R
-21D0;R
-21D1;R
-21D2;R
-21D3;R
-21D4;R
-21D5;R
-21D6;R
-21D7;R
-21D8;R
-21D9;R
-21DA;R
-21DB;R
-21DC;R
-21DD;R
-21DE;R
-21DF;R
-21E0;R
-21E1;R
-21E2;R
-21E3;R
-21E4;R
-21E5;R
-21E6;R
-21E7;R
-21E8;R
-21E9;R
-21EA..21F3;
-21F4;R
-21F5;R
-21F6;R
-21F7;R
-21F8;R
-21F9;R
-21FA;R
-21FB;R
-21FC;R
-21FD;R
-21FE;R
-21FF;R
+21BA..21FF;R
 2200;U
 2201;U
 2202;N
@@ -721,6 +619,7 @@ code point;class
 2336;N
 233D;B
 233F;R
+237C;R
 2394;N
 239B..23AF;G
 23B0;R
@@ -751,6 +650,7 @@ code point;class
 25AD;N
 25AE;N
 25AF;N
+25B0;N
 25B1;N
 25B2;B
 25B3;B
@@ -778,6 +678,7 @@ code point;class
 25CB;B
 25CE;N
 25CF;N
+25D0..25D3;N
 25D6;N
 25D7;N
 25E2;N
@@ -785,6 +686,7 @@ code point;class
 25E4;N
 25E5;N
 25E6;B
+25E7..25EA;N
 25EB;B
 25EC;B
 25EF;N
@@ -855,7 +757,10 @@ code point;class
 27C7;R
 27C8;R
 27C9;R
-#27CC;L
+27CA;R
+27CC;L
+27CE;B
+27CF;B
 27D0;N
 27D1;B
 27D2;R
@@ -1416,24 +1321,7 @@ code point;class
 2AFD;B
 2AFE;B
 2AFF;L
-2B00;R?
-2B01;R?
-2B02;R?
-2B03;R?
-2B04;R?
-2B05;R?
-2B06;R?
-2B07;R?
-2B08;R?
-2B09;R?
-2B0A;R?
-2B0B;R?
-2B0C;R?
-2B0D;R?
-2B0E;R?
-2B0F;R?
-2B10;R?
-2B11;R?
+2B00..2B11;R
 2B12;N
 2B13;N
 2B14;N
@@ -1446,6 +1334,8 @@ code point;class
 2B21;N
 2B22;N
 2B23;N
+2B30..2B44;R
+2B47..2B4C;R
 3008;X
 3009;X
 #3014;O
